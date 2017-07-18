@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Signup</title>
+	</head>
+	<body>
+
+		<%- messages('message', locals) %>
+		
+		<form method="post" action="/signup">
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="email@email.com">
+			<label for="password">Password:</label>
+			<input type="text" name="password" placeholder="password">
+			<label for="passwordConfirmation">Confirm:</label>
+			<input type="text" name="passwordConfirmation" placeholder="confirm password">
+			<input type="submit" value="submit">
+		</form>
+
+	</body>
+</html>

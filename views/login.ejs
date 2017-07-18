@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+	</head>
+	<body>
+		<%- messages('message', locals) %>
+		<form method="post" action="/login">
+			<input type="email" name="email" placeholder="email@email.com">
+			<input type="text" name="password" placeholder="password">
+			<input type="submit" value="submit">
+		</form>
+
+	</body>
+</html>
